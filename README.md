@@ -171,16 +171,6 @@ This system enables the food delivery service to:
 
 > ⚠️ Ensure `restaurant_info.csv` and `Orders.csv` are in the `/data` folder before running.
 
----
-
-## 🌟 Why I’d Hire This Candidate (Recruiter’s Endorsement)
-
-> “This project demonstrates rare completeness: you took messy data, engineered a robust system, built user-facing tools, and delivered business metrics — all while following software best practices. In interviews, I’d ask you to walk me through your normalization choices or how you’d scale this to 10M orders. You’re clearly ready for real-world analytics engineering or BI development roles. Well done.”
-
-— *Professional Recruiting Manager, Data Science & Business Analytics*
-
----
-
 ## 📚 References
 
 - Dasu, T., & Johnson, T. (2003). *Exploratory Data Mining and Data Cleaning*. Wiley.  
