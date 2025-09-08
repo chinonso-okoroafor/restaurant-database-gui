@@ -10,22 +10,6 @@
 ![Matplotlib](https://img.shields.io/badge/Visualization-Matplotlib-purple)  
 ![Pandas](https://img.shields.io/badge/Data%20Cleaning-Pandas-red)
 
----
-
-## 🎯 Executive Summary — Why This Project Stands Out
-
-As a hiring manager for Data Science & Business Analytics roles, I look for candidates who can bridge **raw data → clean database → actionable insights → user-friendly tools**. This project delivers exactly that — and does it with **professional-grade rigor**.
-
-✅ **Real-World Business Problem**: Built for a fictional U.S. food delivery service needing to migrate from messy CSVs to a scalable, queryable system.  
-✅ **Full SDLC Execution**: From ERD design → data cleaning → normalized schema → GUI development → metric visualization.  
-✅ **Industry-Relevant Stack**: Python, SQLite, Tkinter, Matplotlib, Pandas — tools used daily in analytics roles.  
-✅ **Demonstrated Business Impact**: Enables dynamic manager updates, calculates KPIs (mean food ratings), and visualizes operational efficiency (delivery time histogram).  
-✅ **Scalability & Best Practices**: Schema redesigned to 3NF, extended for new entity (Delivery Staff), error handling, and modular code.
-
-> 💡 **Recruiter’s Note**: This isn’t a toy project — it’s a **miniature enterprise BI system**. Candidates who build this understand how data powers decisions.
-
----
-
 ## 🧩 Project Scope & Business Requirements
 
 A local food delivery service needed to:
