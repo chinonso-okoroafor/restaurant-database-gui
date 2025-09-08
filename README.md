@@ -48,7 +48,7 @@ Designed and implemented a **9-table normalized schema** following Third Normal 
 - Later extended → `DeliveryStaff`
 
 **ERD Snapshot**:  
-*(Insert image of ERD here — e.g., `erd_diagram.png`)*  
+![ERD Diagram](screenshots/erd-digram.png)
 > 📌 **Skill Highlight**: Entity-Relationship modeling, PK/FK constraints, referential integrity, schema evolution.
 
 ---
