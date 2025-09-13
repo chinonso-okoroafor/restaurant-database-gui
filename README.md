@@ -143,7 +143,7 @@ This system enables the food delivery service to:
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 1. Clone this repo:
    ```bash
@@ -162,27 +162,11 @@ This system enables the food delivery service to:
    python gui.py
    ```
 
-> ⚠️ Ensure `restaurant_info.csv` and `Orders.csv` are in the `/data` folder before running.
+> Ensure `restaurant_info.csv` and `Orders.csv` are in the `/data` folder before running.
 
-## 📚 References
+## References
 
 - Dasu, T., & Johnson, T. (2003). *Exploratory Data Mining and Data Cleaning*. Wiley.  
 - Dennis, A., Wixom, B.H., & Tegarden, D. (2012). *Systems Analysis & Design*. Wiley.
-
----
-
-## 🤝 Connect & Collaborate
-
-👤 **Author**: [Your Name]  
-📧 **Email**: [your.email@example.com]  
-💼 **LinkedIn**: [linkedin.com/in/yourprofile]  
-🎓 **Program**: MSc Data Science and Business Analytics, University of Plymouth
-
-> 👉 *Open to internships, graduate roles, and freelance data engineering/analytics projects.*
-
----
-
-✅ **Last Updated**: January 2024  
-✅ **License**: MIT (Feel free to use, adapt, or learn from this code!)
 
 ---
