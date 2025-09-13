@@ -9,21 +9,21 @@
 ![Matplotlib](https://img.shields.io/badge/Visualization-Matplotlib-purple)  
 ![Pandas](https://img.shields.io/badge/Data%20Cleaning-Pandas-red)
 
-## 🧩 Project Scope & Business Requirements
+## Project Scope & Business Requirements
 
 A local food delivery service needed to:
 1. **Replace error-prone CSV files** with a **structured relational database**.
 2. **Clean and standardize messy data** (missing values, inconsistent formats).
 3. Build a **non-technical user interface (GUI)** to:
-   - ✏️ Update restaurant manager details (email, tenure, name)
-   - 📊 Calculate and display **mean Customer Rating-Food per restaurant**
-   - 📈 Generate a **histogram of Delivery Time Taken (mins)** for performance analysis
+   - Update restaurant manager details (email, tenure, name)
+   - Calculate and display **mean Customer Rating-Food per restaurant**
+   - Generate a **histogram of Delivery Time Taken (mins)** for performance analysis
 
 ---
 
-## 🛠️ Technical Implementation
+## Technical Implementation
 
-### 1. 🔍 Data Cleaning & Preprocessing (Pandas)
+### 1. Data Cleaning & Preprocessing (Pandas)
 Handled real-world data quality issues:
 ```python
 # Examples from cleaning logic
@@ -35,7 +35,7 @@ df['Email'].fillna('noemail@example.com', inplace=True)
 ```
 ---
 
-### 2. 🗃️ Database Design (SQLite, 3NF)
+### 2. Database Design (SQLite, 3NF)
 
 Designed and implemented a **9-table normalized schema** following Third Normal Form to eliminate redundancy and ensure data integrity.
 
@@ -48,21 +48,21 @@ Designed and implemented a **9-table normalized schema** following Third Normal 
 ![ERD Diagram](https://github.com/chinonso-okoroafor/restaurant-database-gui/blob/main/screenshots/erd-diagram.png)
 ---
 
-### 3. 💻 GUI Application (Tkinter + Matplotlib)
+### 3. GUI Application (Tkinter + Matplotlib)
 
 Built a desktop application with 3 core business functions:
 
-#### ✅ Feature 1: Update Restaurant Manager
+#### Feature 1: Update Restaurant Manager
 - Form-based interface with validation
 - Real-time database updates
 - Error handling for invalid inputs (e.g., malformed email)
 
-![Manager Update GUI](screenshots/manager_update.png)  
+![Manager Update GUI](https://github.com/chinonso-okoroafor/restaurant-database-gui/blob/main/screenshots/manager_update.png)  
 *Fig: GUI preventing invalid email submission with messagebox alert*
 
 ---
 
-#### ✅ Feature 2: Calculate Mean Food Rating per Restaurant
+#### Feature 2: Calculate Mean Food Rating per Restaurant
 - Dropdown selector for restaurant name
 - Executes `JOIN` between `Orders` and `Restaurant`
 - Displays result rounded to 2 decimal places
@@ -74,12 +74,12 @@ JOIN Restaurant ON Orders.RestaurantID = Restaurant.RestaurantID
 WHERE Restaurant.RestaurantName = ?
 ```
 
-![Food Rating GUI](screenshots/food_rating.png)  
+![Food Rating GUI](https://github.com/chinonso-okoroafor/restaurant-database-gui/blob/main/screenshots/food_rating.png)  
 *Fig: Mean food rating calculated for "The Golden Dragon"*
 
 ---
 
-#### ✅ Feature 3: Histogram of Delivery Times
+#### Feature 3: Histogram of Delivery Times
 - Queries all `DeliveryTimeTaken` values
 - Plots distribution using `matplotlib`
 - Reveals operational bottlenecks or efficiencies
@@ -89,12 +89,12 @@ plt.hist(delivery_times, bins=30, edgecolor='black')
 plt.title("Histogram of Delivery Time Taken for All Orders")
 ```
 
-![Delivery Time Histogram](screenshots/delivery_histogram.png)  
+![Delivery Time Histogram](https://github.com/chinonso-okoroafor/restaurant-database-gui/blob/main/screenshots/delivery_histogram.png)  
 *Fig: Visualizing delivery performance across all orders*
 
 ---
 
-## 🚀 Key Technical Skills Demonstrated
+## Key Technical Skills Demonstrated
 
 | Skill Area             | Tools & Techniques Used                          | Business Relevance                            |
 |------------------------|--------------------------------------------------|-----------------------------------------------|
@@ -107,40 +107,37 @@ plt.title("Histogram of Delivery Time Taken for All Orders")
 
 ---
 
-## 📈 Business Impact & Analytical Value
+## Business Impact & Analytical Value
 
 This system enables the food delivery service to:
 - **Improve Manager Accountability**: Track tenure and contact info dynamically.
 - **Monitor Restaurant Performance**: Identify high/low-rated restaurants by food quality.
 - **Optimize Logistics**: Spot delivery time outliers and improve SLA compliance.
 - **Scale Operations**: Schema supports adding delivery staff, payment providers, etc.
+---
 
-> 💡 **Recruiter’s Insight**: You didn’t just write code — you built a **decision-support tool**. That’s what businesses pay for.
+## Testing & Validation
+
+- All GUI functions include **error handling** (e.g., database connection failures, empty inputs).
+- **Screenshots provided** in report validate successful execution of all features.
+- Schema redesigned to include `DeliveryStaff` — proving ability to **iterate based on new requirements**.
 
 ---
 
-## 🧪 Testing & Validation
-
-- ✅ All GUI functions include **error handling** (e.g., database connection failures, empty inputs).
-- ✅ **Screenshots provided** in report validate successful execution of all features.
-- ✅ Schema redesigned to include `DeliveryStaff` — proving ability to **iterate based on new requirements**.
-
----
-
-## 📁 Repository Structure
+## Repository Structure
 
 ```
-├── Coursework.py               # Main application (GUI + DB logic)
+├── Coursework.py               # Main DB logic
+├── gui.py                      # Main GUI logic
 ├── data/
 │   ├── restaurant_info.csv     # Raw input data
 │   └── Orders.csv
-├── database/
-│   └── Coursework.db           # Generated SQLite database
-├── screenshots/                # Validation images (add your PNGs here)
-│   ├── manager_update.png
+├── Coursework.db              # Generated SQLite database
+├── screenshots/               # Validation images (add your PNGs here)
+│   ├── erd-diagram.png
+|   ├── manager_update.png
 │   ├── food_rating.png
 │   └── delivery_histogram.png
-├── ERD_Diagram.pdf             # Entity Relationship Diagram
 └── README.md                   # You are here!
 ```
 
@@ -162,6 +159,7 @@ This system enables the food delivery service to:
 3. Run the application:
    ```bash
    python Coursework.py
+   python gui.py
    ```
 
 > ⚠️ Ensure `restaurant_info.csv` and `Orders.csv` are in the `/data` folder before running.
