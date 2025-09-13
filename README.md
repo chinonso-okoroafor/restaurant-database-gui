@@ -1,8 +1,7 @@
 
 ---
 
-# 🍽️ Restaurant Analytics System — End-to-End Database + GUI Application  
-> *A Production-Ready Simulation for Real-World Business Intelligence*
+# Restaurant Analytics System — End-to-End Database + GUI Application  
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)  
 ![SQLite](https://img.shields.io/badge/SQLite-Relational%20DB-orange)  
@@ -34,8 +33,6 @@ df['PaymentMode'] = np.where(df['CreditCard'].notna(), 'Credit Card',
 df['Manager'].fillna('Unknown', inplace=True)
 df['Email'].fillna('noemail@example.com', inplace=True)
 ```
-> 📌 **Skill Highlight**: Imputation, conditional logic, placeholder standardization — critical for production data pipelines.
-
 ---
 
 ### 2. 🗃️ Database Design (SQLite, 3NF)
@@ -48,9 +45,7 @@ Designed and implemented a **9-table normalized schema** following Third Normal 
 - Later extended → `DeliveryStaff`
 
 **ERD Snapshot**:  
-![ERD Diagram](screenshots/erd-digram.png)
-> 📌 **Skill Highlight**: Entity-Relationship modeling, PK/FK constraints, referential integrity, schema evolution.
-
+![ERD Diagram](https://github.com/chinonso-okoroafor/restaurant-database-gui/blob/main/screenshots/erd-diagram.png)
 ---
 
 ### 3. 💻 GUI Application (Tkinter + Matplotlib)
