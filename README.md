@@ -147,7 +147,7 @@ This system enables the food delivery service to:
 
 1. Clone this repo:
    ```bash
-   git clone https://github.com/yourusername/restaurant-analytics-system.git
+   git clone https://github.com/chinonso-okoroafor/restaurant-analytics-system.git
    cd restaurant-analytics-system
    ```
 
